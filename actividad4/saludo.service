@@ -1,0 +1,11 @@
+[Unit]
+Description=Servicio de saludo y la fecha actual
+
+[Service]
+ExecStart=/usr/local/bin/saludo.sh
+Restart=always
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
